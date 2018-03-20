@@ -1,5 +1,5 @@
 describe('countRegNumber function', function(){
-  it('The function that takes in a string parameter', function(){
+  it('Should return the string parameter', function(){
     var number = "CA 234"
     assert.equal(countRegNumber(number), true);
   });

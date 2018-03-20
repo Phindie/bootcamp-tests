@@ -4,10 +4,13 @@ describe('fromWhere function', function(){
 
     assert.equal(fromWhere("CY,CJ,CA"), "Bellville");
 });
-it('It should recognise the town for the registration number ', function(){
+it('It should recognise that the registration number is from Paarl', function(){
 assert.equal(fromWhere("CJ"), "Paarl");
 });
 it('Should recognise that the registration number is from Cape town', function(){
 assert.equal(fromWhere("CA"), "Cape Town");
+});
+it('Should recognise that the registration number is from other place', function(){
+assert.equal(fromWhere("CK 123458"), "Some other place!");
 });
 });

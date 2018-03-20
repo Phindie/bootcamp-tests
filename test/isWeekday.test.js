@@ -1,9 +1,9 @@
 describe('isWeekday function', function(){
-  it('function called countAllPaarl that takes a parameter string with registration numbers', function(){
+  it('Should return true if its a weekday', function(){
     var  weekday= "Monday"
     assert.equal(isWeekday(weekday), true);
   });
-  it('Should return it is not a weekday', function(){
+  it('Should return false if it is not a weekday', function(){
     var  weekday= "Saturday"
     assert.equal(isWeekday(weekday), false);
 });

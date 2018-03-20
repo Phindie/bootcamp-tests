@@ -4,10 +4,10 @@ describe('transportFee function', function(){
     assert.equal(transportFee('morning'), "R20");
   });
 
-  it('Should return the message, is not a shift', function(){
-    assert.equal(transportFee('Pindi'), "free")
-});
-it('Should return the message, is not a shift', function(){
+  it('should return R10 if you are working in the afternoon ', function(){
+    assert.equal(transportFee('afternoon'),'R10');
+  });
+it('Should return free if you work a night shift', function(){
   assert.equal(transportFee('monthly'), "free")
 });
 });

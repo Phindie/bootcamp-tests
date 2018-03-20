@@ -1,6 +1,6 @@
 
 describe('countAllPaarl function', function(){
-  it('function called countAllPaarl that takes a parameter string with registration numbers', function(){
+  it('Should return the parameter string and registration numbers from Paarl', function(){
     var cjreg = "CJ"
     assert.equal(countAllPaarl(cjreg), 1);
   });

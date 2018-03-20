@@ -1,5 +1,5 @@
 describe('totalPhoneBill function', function(){
-  it('function that takes in a string calls made and sms sent', function(){
+  it('Should take in all calls made and sms sent', function(){
     var list = "bill"
     assert.equal(totalPhoneBill(list), "R0.00");
   });
